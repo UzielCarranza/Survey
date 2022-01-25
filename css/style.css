@@ -1,0 +1,169 @@
+/*
+
+* {
+  outline: 2px solid black;
+}
+*/
+
+body {
+  background-color: white;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: "Exo", sans-serif;
+  color: #fff;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 20% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#main {
+  background-color: #a1c4fd;
+  width: 50%;
+  margin-top: 5%;
+  margin-left: 25%;
+}
+
+p {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin-top: 40px;
+}
+
+/*
+  header
+  */
+
+#header,
+h1 {
+  width: 50%;
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 25%;
+  margin-right: 25%;
+  background-color: #a1c4fd;
+  color: white;
+  padding-top: 20px;
+}
+
+#description {
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+  background-color: #a1c4fd;
+  margin-top: 20px;
+}
+
+/*
+  form
+  */
+
+#survey-form {
+  box-sizing: border-box;
+  width: 90%;
+  height: 700px;
+  margin-top: 5%;
+  margin-bottom: 30%;
+  margin-left: 4em;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  flex-direction: initial;
+  align-content: center;
+  background-color: #a1c4fd;
+}
+
+.form--label {
+  width: 90%;
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 5%;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+#email,
+#name,
+#number {
+  color: white;
+  max-width: auto;
+  height: auto;
+}
+
+.form--label--checkboxes {
+  width: 80%;
+  height: 39%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  flex-direction: column;
+  position: relative;
+  top: 50px;
+  right: -420px;
+  color: white;
+  margin-right: 60px;
+  padding-right: 50px;
+}
+
+input[type="text"] :focus {
+  background-color: lightblue;
+}
+
+.container--flex {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  top: 50px;
+  left: 125px;
+  color: white;
+}
+
+.section--comments {
+  width: 200%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 50%;
+  right: 40%;
+  margin-bottom: 50px;
+  display: flex;
+  align-content: center;
+  color: white;
+}
+
+#submit {
+  width: 200px;
+  height: 50px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border-radius: 10%;
+}
+
+.text--style {
+  color: white;
+  font-size: 30px;
+}

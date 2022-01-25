@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey</title>
+    
+    <link rel="stylesheet" href="/survey/css/style.css" />
+  </head>
+  <main id="main">
+  <body>
+    <header id="header">
+        <h1 id="title">survey</h1>
+      <p id="description">Please complete the next survey!</p>
+    </header>
+    <form action="" method="" autocomplete="on" id="survey-form">
+      <div class="container--flex">
+        <div class="form--label">
+          <label for="name" id="name-label">1. First Name:</label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="John"
+            required
+          />
+        </div>
+        <div class="form--label">
+          <label>2. Last Name:</label>
+          <input
+            id="name"
+            type="text"
+            name="lname"
+            placeholder="Doe"
+            required
+          />
+        </div>
+        <div class="form--label">
+          <label id="email-label">3. Email:</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="YourEmail@email.com"
+            autocomplete="on"
+            id="email"
+            required
+          />
+        </div>
+        <div class="form--label">
+          <label id="number-label">4. Phone Number</label>
+          <input
+            id="number"
+            type="number"
+            name="phone"
+            placeholder="(123)-456-78-90"
+            min="10" max="99"
+          />
+        </div>
+        <div class="form--label">
+          <label>
+            5. Select from the following offices:
+            <select id="dropdown" name="prefix">
+              <option>Select</option>
+              <option value="LA">Los Angeles, CA</option>
+              <option value="TX">San Antonio, TX</option>
+              <option value="IL">Chicago, IL</option>
+              <option value="IN">Indianapolis, IN</option>
+              <option value="MN">Minneapolis, MN</option>
+              <option value="other">other</option>
+            </select>
+          </label>
+        </div>
+      </div>
+      <div class="form--label--checkboxes">
+        <p>I want to keep in contact through:</p>
+        <label>
+          <input type="checkbox" name="user-registration" value="Facebook" />
+          Facebook
+        </label>
+        <label>
+          <input type="checkbox" name="user-registration" value="Twitter" />
+          twitter
+        </label>
+        <label>
+          <input type="checkbox" name="user-registration" value="Instagram" />
+          Instagram
+        </label>
+        <label>
+            <input type="checkbox" name="user-registration" value="Text" />
+            Text
+          </label>
+        <label>
+        <input type="checkbox" name="user-registration" value="contact-email" />
+            Email
+        </label>
+        <br>
+        <label > Do you want to register for more offers?</label>
+        <label>
+            <input type="radio" value="yes" name="register"> yes
+
+        </label>
+        <label>
+            <input type="radio" value="no" name="register"> No
+        </label>
+      </div>
+      <div class="section--comments">
+        <p class="text--style">Comments:</p>
+        <textarea name="comments" cols="20" rows="20"></textarea>
+
+        <button id="submit" type="submit" value="submit form"> Submit</button>
+        <button id="submit" type="reset" value="reset form">Resest</button>
+   
+    </form>
+  </body>
+  </main>
+</html>
